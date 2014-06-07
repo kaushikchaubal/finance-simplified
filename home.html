@@ -9,7 +9,9 @@
 		<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
 		<title>Finance Simplified</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 
 		<!-- Bootstrap core CSS -->
@@ -17,13 +19,6 @@
 
 		<!-- Custom styles for this template -->
 		<link href="css/navbar.css" rel="stylesheet">
-
-		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-		<script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		    <!--[if lt IE 9]>
@@ -34,6 +29,33 @@
 		<script src="js/StartupLoad.js"></script>		
 		<script src="js/MyDropdownRemote.js"></script>
 		<script src="js/MyChartRemote.js"></script>
+
+		<style> 
+			.header {
+				padding-left: 10px;
+				padding-top: 1px;
+				padding-bottom: 1px;
+				background-color:#f8f8f8;
+				border: 2px solid;
+				border-color:#e7e7e7;
+    			box-shadow: 5px 5px 2px #888888;
+			}
+			.header h1 {
+				font-size:60px;
+			}
+			#howItWorks {
+				padding-top:5px; 
+				padding-bottom:2px; 
+				text-align:center; 
+				font-weight:normal; 
+				font-size: 18px;
+			}
+			.content {
+				/*border: 1px solid;*/
+				width: 50%;
+				float: left;
+			}
+		</style>
 	</header>
 
 	<body>
@@ -53,26 +75,11 @@
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="#">Equity</a></li>
-							<li><a href="#">Fixed Income</a></li>
-							<li><a href="#">Cash</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Alternatives <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Real Estate</a></li>
-									<li><a href="#">Commodities</a></li>
-									<li><a href="#">Cash</a></li>
-									<li class="divider"></li>
-									<li class="dropdown-header">Derivatives</li>
-									<li><a href="#">Futures</a></li>
-									<li><a href="#">Forwards</a></li>
-									<li><a href="#">Options</a></li>
-									<li><a href="#">Swaps</a></li>
-								</ul>
-							</li>
+							<li><a href="#">Find by tags</a></li>
+							<li><a href="#">Find by category</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Certifications</a></li>
+							<li><a href="#">About</a></li>
 							<li><a href="#">References</a></li>
 							<li class="active"><a href="http://uk.linkedin.com/pub/kaushik-chaubal/17/314/120/">Connect</a></li>
 						</ul>
@@ -81,9 +88,33 @@
 			</div>
 
 	  		<!-- Main component for a primary marketing message or call to action -->
-	  		<div class="jumbotron">
+	  		<div class="header">
 	  			<h1>Finance Simplified</h1>
 	  			<p>A one-stop shop to understand everything around the basics of finance and investments</p>
+	  		</div>
+
+	  		<div class="content">
+	  			<h4 id="howItWorks"> How it works: </h4>
+	  			<div id="accordian">
+	  				<h3>Find topic by tag or category</h3>
+	  				<div>
+	  					<p>Get an article-list using tags or categories</p>
+	  				</div>
+	  				<!--Add two more sections below!-->
+	  				<h3>Find the article from the article-list</h3>
+	  				<div>
+	  					<p>From the article-list, find the article of choice</p>
+	  				</div>
+	  				<h3>Read, self-enlighten, share and grow!</h3>
+	  				<div>
+	  					<p>Enjoy the read and do your bit for the society and don't forget to share it with friends!</p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		
+	  		<div class="content">
+	  			<!-- <h3>Why care about finance? </h3> -->
+	  			<div id="firstChart" style="padding-top:5px;"></div>
 	  		</div>
 
 	  	</div> <!-- /container -->

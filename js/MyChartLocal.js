@@ -4,10 +4,7 @@
 				type: 'line'
 			},
 			title: {
-				text: 'First title text'
-			},
-			subtitle: {
-				text: 'Source: some-source.com'
+				text: 'Why care about finance?'
 			},
 			xAxis: {
 				categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'],
