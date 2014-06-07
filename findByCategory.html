@@ -31,29 +31,20 @@
 		<script src="js/MyChartRemote.js"></script>
 
 		<style> 
-			.header {
-				padding-left: 10px;
-				padding-top: 1px;
-				padding-bottom: 1px;
-				background-color:#f8f8f8;
-				border: 2px solid;
-				border-color:#e7e7e7;
-    			box-shadow: 5px 5px 2px #888888;
-			}
-			.header h1 {
-				font-size:60px;
-			}
-			#howItWorks {
-				padding-top:5px; 
-				padding-bottom:2px; 
-				text-align:center; 
-				font-weight:normal; 
-				font-size: 18px;
-			}
 			.content {
-				/*border: 1px solid;*/
-				width: 50%;
+				
+    			border-radius: 25px;
+    			background-color:#f8f8f8;
+    			border-color:#e7e7e7;
+				width: 100%;
 				float: left;
+				padding-left: 20px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				margin-bottom: 10px;
+			}
+			.inner {
+				border-color:white;
 			}
 		</style>
 	</header>
@@ -76,7 +67,7 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="#">Find by tags</a></li>
-							<li><a href="findByCategory.html">Find by category</a></li>
+							<li class="active"><a href="findByCategory.html">Find by category</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">About</a></li>
@@ -87,35 +78,32 @@
 				</div><!--/.container-fluid -->
 			</div>
 
-	  		<!-- Main component for a primary marketing message or call to action -->
-	  		<div class="header">
-	  			<h1>Finance Simplified</h1>
-	  			<p>A one-stop shop to understand everything around the basics of finance and investments</p>
-	  		</div>
-
-	  		<div class="content">
-	  			<h4 id="howItWorks"> How it works: </h4>
-	  			<div id="accordian">
-	  				<h3>Find topic by tag or category</h3>
-	  				<div>
-	  					<p>Get an article-list using tags or categories</p>
-	  				</div>
-	  				<!--Add two more sections below!-->
-	  				<h3>Find the article from the article-list</h3>
-	  				<div>
-	  					<p>From the article-list, find the article of choice</p>
-	  				</div>
-	  				<h3>Read, self-enlighten, share and grow!</h3>
-	  				<div>
-	  					<p>Enjoy the read and do your bit for the society and don't forget to share it with friends!</p>
-	  				</div>
-	  			</div>
-	  		</div>
-	  		
-	  		<div class="content">
-	  			<!-- <h3>Why care about finance? </h3> -->
-	  			<div id="firstChart" style="height: 60%; padding-top:5px;"></div>
-	  		</div>
+			<div id="accordian">
+		  		<p class="content"><a href="#">Equity</a></p>
+		  		<div class="inner">
+		  			<p>Blah!</p>
+		  		</div>
+		  		<p class="content">Fixed Income</p>
+		  		<div class="inner">
+		  			<p>Blah!</p>
+		  		</div>
+		  		<p class="content">Cash</p>
+		  		<div class="inner">
+		  			<p>Blah!</p>
+		  		</div>
+		  		<p class="content">Derivatives</p>
+		  		<div class="inner">
+		  			<p>Blah!</p>
+		  		</div>
+		  		<p class="content">Mutual funds</p>
+		  		<div class="inner">
+		  			<p>Blah!</p>
+		  		</div>
+		  		<p class="content">Exchange-traded funds</p>
+		  		<div class="inner">
+		  			<p>Blah!</p>
+		  		</div>
+			</div>
 
 	  	</div> <!-- /container -->
 
