@@ -31,22 +31,49 @@
 		<script src="js/MyChartRemote.js"></script>
 
 		<style> 
+			.header {
+				padding-left: 10px;
+				padding-top: 1px;
+				padding-bottom: 1px;
+				background-color:#f8f8f8;
+				border: 2px solid;
+				border-color:#e7e7e7;
+    			box-shadow: 5px 5px 2px #888888;
+			}
+			.header h1 {
+				font-size:60px;
+			}
+			#howItWorks {
+				padding-top:5px; 
+				padding-bottom:2px; 
+				text-align:center; 
+				font-weight:normal; 
+				font-size: 18px;
+			}
 			.content {
-				
-    			border-radius: 25px;
-    			background-color:#f8f8f8;
-    			border-color:#e7e7e7;
-				width: 100%;
+				/*border: 1px solid;*/
+				width: 50%;
 				float: left;
-				padding-left: 20px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				margin-bottom: 10px;
 			}
 			.inner {
-				border-color:white;
+				padding-top: 20px;
 			}
 		</style>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('.equity').hide();
+			});
+
+			function selectedTag(text) {
+
+				if(text == "Equity") {
+					$('.equity').fadeIn(500);	
+				}
+			}
+
+		</script>
 	</header>
 
 	<body>
@@ -66,8 +93,8 @@
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="findByTag.html">Find by tag</a></li>
-							<li class="active"><a href="findByCategory.html">Find by category</a></li>
+							<li class="active"><a href="findByTag.html">Find by tag</a></li>
+							<li><a href="findByCategory.html">Find by category</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">About</a></li>
@@ -78,8 +105,16 @@
 				</div><!--/.container-fluid -->
 			</div>
 
-			<div id="accordian">
-		  		<p class="content"><a href="#">Equity</a></p>
+			<select style="width:100%;" onchange="selectedTag(this[selectedIndex].text)">
+				<option value="Select">Select tag from list</option> 
+				<option value="Equity">Equity</option>
+				<option value="Fixed Income">Fixed Income</option> 
+				<option value="Derivatives">Derivatives</option>
+				<option value="Mutual funds">Mutual funds</option>
+				<option value="Exchange-traded funds">Exchange-traded funds</option>
+			</select>
+
+			<div class="equity">
 		  		<div class="inner">
 		  			<p><a href="whatIsEquity.html">What is equity/ shares/ stocks?</a></p>
 		  			<p><a href="#">What are the different types of shares?</a></p>
@@ -89,27 +124,7 @@
 					<p><a href="#">What does active investment mean?</a></p>
 					<p><a href="#">What does passive investment mean?</a></p>
 					<p><a href="#">What is smart beta?</a> <br/>
-		  		</div>
-		  		<p class="content">Fixed Income</p>
-		  		<div class="inner">
-		  			<p>Blah!</p>
-		  		</div>
-		  		<p class="content">Cash</p>
-		  		<div class="inner">
-		  			<p>Blah!</p>
-		  		</div>
-		  		<p class="content">Derivatives</p>
-		  		<div class="inner">
-		  			<p>Blah!</p>
-		  		</div>
-		  		<p class="content">Mutual funds</p>
-		  		<div class="inner">
-		  			<p>Blah!</p>
-		  		</div>
-		  		<p class="content">Exchange-traded funds</p>
-		  		<div class="inner">
-		  			<p>Blah!</p>
-		  		</div>
+		  		</div>	
 			</div>
 
 	  	</div> <!-- /container -->
