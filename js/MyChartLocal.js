@@ -4,17 +4,20 @@
 				type: 'line'
 			},
 			title: {
-				text: 'Why care about finance?'
+				text: 'Why Invest?'
+			},
+			subtitle: {
+				text: 'Magic of Compounding - investing £100'
 			},
 			xAxis: {
-				categories: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'],
+				categories: ['10', '20', '30', '40', '50'],
 				title: {
-					text: 'X-axis'
+					text: 'Number of years investment'
 				}
 			},
 			yAxis: {
 				title: {
-					text: 'Y-axis'
+					text: 'Size of fund (£)'
 				}
 			},
 			plotOptions: {
@@ -26,11 +29,11 @@
 				}
 			},
 			series: [{
-				name: 'FirstLine',
-				data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+				name: 'Simple Interest',
+				data: [200, 300, 400, 500, 600]
 			}, {
-				name: 'SecondLine',
-				data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+				name: 'Compound Interest',
+				data: [200, 673, 1745, 4525, 11739]
 			}]
 		});
 	});
