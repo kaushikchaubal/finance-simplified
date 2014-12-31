@@ -16,6 +16,12 @@ angular
         templateUrl: 'app/views/categories.html',
         controller: 'CategoriesCtrl'
       })
+      .when('/overview', {
+        templateUrl: 'app/views/overview/overview.html'
+      })
+      .when('/overview/purpose-and-functioning', {
+        templateUrl: 'app/views/overview/purpose-and-functioning.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
