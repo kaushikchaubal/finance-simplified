@@ -1,0 +1,126 @@
+Bond Terminology
+	Issuer
+		includes national governments, local governments, corporations, financial institutions, supra-national organisations
+		quality of issuer determines credit rating, and thus bond yield
+	Issue price
+		price paid determines yield-to-maturity for investor
+		issue price may be paid in one or several instalments
+	Maturity date
+		date when face value is paid to bond-holder
+		some bonds redeemable on any coupon date over a range of dates
+	Coupons
+		either fixed-rate or floating-rate
+		most bonds pay semi-annual coupons (the remainder mostly annually)
+		basis for calculating actual and accrued coupon differs
+			ACT/ACT
+			ACT/360
+			ACT/365
+			 30/360
+			... are all used first coupon period for some bonds is of abnormal length
+	Accrued interest
+		the coupon earned since the last coupon payment
+	Face value (or par value)
+		unit in which bond is denominated
+		principal amount upon which coupon interest is calculated
+	Redemption value
+		normally the same as face value
+		redemption value may be different for bonds repaid prior to normal maturity (e.g. callable bonds)
+	Clean price
+		price at which bond currently trades
+		price normally quoted as percent of face or par value
+		normally quoted without accrued interest
+	Dirty price
+		the price quoted (or amount invoiced) including accrued interest
+	Yield to maturity
+		the interest rate such that:
+		summing the present value of all future cash flows...
+		... calculated by using this yield as the discounting rate
+		... equals the current bond price
+	Current yield
+		the coupon rate divided by the dirty price
+
+Basic Bond Pricing
+	(**Diagram here**)
+	Intuitively, the “fair” price for a bond should be the sum of the present values of each of the future cash flows:
+	(**Formula here**)
+	(**Formula here**)
+	Where:
+		P is the fair price for bond
+		F is the face value of bond
+		i is the per-period yield-to-maturity (expressed as a decimal)
+		c is the coupon rate per period (expressed as a decimal)
+		n is the number of coupon periods
+
+Yield, Coupon, Price and Par
+	If Yield > Coupon then Current Price < Par
+	If Yield = Coupon then Current Price = Par
+	If Yield < Coupon then Current Price > Par
+
+The Price / Yield Relationship 
+	(**Diagram here**)
+
+Price / Maturity / Time Relationship
+	Price and yield are inversely related
+		When yields are low, the bond price is high
+		When yields are high, the bond price is low
+	The longer the maturity, the more the bond’s price is affected by yield
+	As the bond approaches maturity, the price will approach par
+
+Reinvestment Risk
+	If coupons can be reinvested at the yield to maturity...
+	... the effective yield from holding bond will equal yield to maturity.
+	If coupons are reinvested at a different rate...
+	... the effective yield will be different from the yield to maturity.
+	An investor who buys a coupon bond cannot therefore be confident of the ultimate return...
+	... which will depend upon interest rates eventually prevailing.
+	This is known as:
+	Reinvestment Risk
+
+Reinvestment Risk Illustrated
+	(**Chart here**)
+	The chart illustrates the effective yield earned from holding:
+		a five-year bond
+		a thirty-year bond
+	under different levels of prevailing interest rates.
+	In both cases:
+		bond has an 5% coupon
+		initial yields are 5% so bonds are purchased at par
+
+Total Return
+	Total return is the effective yield from a fixed-income investment allowing for:
+	Reinvestment returns on coupons received
+	Proceeds realized from sale of bond prior to maturity
+
+Accrued Interest
+	As each day goes by, bonds accrue interest to the investor
+	This interest is “earned” by the investor...
+	... but is only paid in discrete instalments as coupon payments
+	In-between coupon payments, accrued interest accumulates with the bond
+	Whenever a bond changes hands, the buyer pays the seller the interest accrued to that date
+	Accrued interest is always calculated by:
+	Face Value X Coupon Rate X Day Count Fraction
+	and the Day Count Fraction is:
+		number of days assumed since last coupon payment
+	divided by
+		total number of days assumed in coupon period
+	... but different bonds and bond markets make different assumptions about how to count
+	days!
+
+Day Count Conventions
+	Actual
+		count actual number of calendar days between two dates
+		e.g. from 15th Feb 2011 to 15th August 2011 there are 181 days
+	30 and 30E
+		assume each month has only 30 days, so don’t accrue coupon on 31st day of a month
+		there is a subtle distinction between the 30 and 30E (European) conventions
+	365
+		assume a year has 365 days
+		(even in a leap year)
+	360
+		assume a year has 360 days
+	365
+		assume a year has 365 days
+		(even in a leap year)
+	365L
+		assume a year has 365 days...
+		... or 366 if end date falls in a leap year

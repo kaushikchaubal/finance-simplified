@@ -1,0 +1,77 @@
+Bond Price Sensitivity
+	We saw before that: Price and Yield are Inversely Related
+	The precise degree of this relationship can be quantified using the concept of: Duration
+	Duration can be thought of in two ways:
+	Duration is the weighted average time of the bond’s cash flows
+	Duration measures the price sensitivity of a bond when yields change
+	We will look at each concept in turn
+
+Duration As a Weighted Time A Pictorial Representation
+	Imagine a lightweight plank of wood
+	On it are placed a number of lightweight glasses...
+		each glass corresponds to a single bond cash-flow
+		the horizontal position of each glass from the left-hand edge represents
+	the time to maturity of that cash flow
+		the height of each glass represents the size of that cash flow
+	The glasses are then filled with a heavy liquid...
+		but not to the top!
+		the height of the liquid in each glass represents the present value of that cash flow
+	Now find the balancing point
+	... the distance of the balancing point from the left-hand edge is the duration of the bond
+	(**Diagram here**)
+
+Duration As a Weighted Time – The Formula
+	Macaulay Duration is the weighted average time of the bond’s cash flows
+		the times are the entities being averaged
+		the present values of the cash flows are used as the weights
+	Calculation steps:
+		take the time to maturity of the first cash flow (in years)
+		calculate the weighting factor as the ratio of:
+			present value of this cash flow, divided by
+			the sum of the present values of all cash flows (i.e. the bond price)
+		multiply the time to maturity by its weighting factor repeat for all the remaining cash flows
+		the sum of these is the Macaulay duration of the bond
+	Formula
+	(**Formula here**)
+	where:
+		n is the number of coupon periods
+		i is the yield to maturity
+		CFt is the cash flow at time t
+		k is the number of coupon periods per year
+		P is the current price of the bond
+		D is the Macaulay duration
+
+Modified Duration As a Measure of Price Sensitivity
+	From Macaulay duration it is easily possible to calculate
+	Modified Duration
+	Modified Duration is:
+	where:
+		i is the yield to maturity 
+	D is the Macaulay duration
+		k is the number of coupon periods per year
+	MD is the modified duration
+	Modified Duration measures the sensitivity of a bond’s price to changes in the yield to maturity:
+	(**Diagram here**)
+	NB: Modified Duration tells you about the percentage change in price, not the actual change in price
+
+Dollar Duration
+	Modified duration provides a measure of the proportional change in a bond’s price
+	In many cases it is useful to know the absolute change in a bond’s price or value
+	This is known as the dollar duration
+	It is easy to calculate the dollar duration for:
+		A 1bp change in interest rates
+		$1m nominal (face) value of the bonds
+	The earlier formula using modified duration gave us the percentage change in price:
+	(**Formula here**)
+	The change in value is the face value multiplied by the absolute change in price:
+	(**Formula here**)
+	For a 1bp change in rates on a $1m holding, the dollar duration is simply the product of modified duration
+	and price:
+	(**Formula here**)
+
+Modified Duration As a Measure of Price Sensitivity Revisited
+	Modified duration can be used to measure price changes for small changes in yields...
+	... but price / yield character-istic for bonds is not linear but convex
+	An adjustment is therefore necessary when considering larger changes in yields
+	The size of this adjustment depends upon the bond’s Convexity
+	(**Diagram here**)
